@@ -12,12 +12,15 @@ class AURA_API AAuraCharacterBase : public ACharacter
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
 	AAuraCharacterBase();
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+//add a skeletal mesh component attached to a socket on the skeleton to make a weapon for all characters
+//UPROPERTY makes it a variable in Unreal. Weapon here is the name of the object.
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	TObjectPtr<USkeletalMeshComponent> Weapon;
 
 	
 };
