@@ -37,7 +37,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMessageWidgetRowSignature, FUIWidge
  */
 
 UCLASS(BlueprintType, Blueprintable)
-class AURA_API UOverlayWidgetController : public UAuraWidgetController
+class AURA_API UOverlayWidgetController : public UAuraWidgetController 
 {
 	GENERATED_BODY()
 public:
