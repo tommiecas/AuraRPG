@@ -41,7 +41,7 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 		FString("Chance to Decrease Incoming Damage by Half"));
 	GameplayTags.Attributes_Secondary_CriticalHitChance = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Attributes.Secondary.CriticalHitChance"),
-		FString("Chance to Double Damage to Others, plus receive a Critical Hit Bonus"));
+		FString("Chance to double Damage to Others, plus receive a Critical Hit Bonus"));
 	GameplayTags.Attributes_Secondary_CriticalHitDamage = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Attributes.Secondary.CriticalHitDamage"),
 		FString("Amount of Bonus Damage caused by Critical Hits"));
