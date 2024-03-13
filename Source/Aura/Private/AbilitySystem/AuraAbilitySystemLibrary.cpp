@@ -35,7 +35,7 @@ UAttributeMenuWidgetController* UAuraAbilitySystemLibrary::GetAttributeMenuWidge
 			UAbilitySystemComponent* ASC = PS->GetAbilitySystemComponent();
 			UAttributeSet* AS = PS->GetAttributeSet();
 			const FWidgetControllerParams WidgetControllerParams(PC, PS, ASC, AS);
-			AuraHUD->GetAttributeMenuWidgetController(WidgetControllerParams);
+			return AuraHUD->GetAttributeMenuWidgetController(WidgetControllerParams);
 		}
 	}
 	return nullptr;
