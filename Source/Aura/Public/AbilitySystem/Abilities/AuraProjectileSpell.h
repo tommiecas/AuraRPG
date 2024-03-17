@@ -6,6 +6,8 @@
 #include "AbilitySystem/Abilities/AuraGameplayAbilityBase.h"
 #include "AuraProjectileSpell.generated.h"
 
+class AAuraProjectile;
+
 /**
  * 
  */
@@ -16,5 +18,7 @@ class AURA_API UAuraProjectileSpell : public UAuraGameplayAbilityBase
 
 protected:
 	virtual void ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, const FGameplayEventData* TriggerEventData) override;
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	TSubclassOf<AAuraProjectile> ProjectileClass;
 };
