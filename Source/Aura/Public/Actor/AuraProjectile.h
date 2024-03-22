@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "../../../../../../../../../Program Files/Epic Games/UE_5.3/Engine/Plugins/FX/Niagara/Source/Niagara/Classes/NiagaraSystem.h"
 #include "GameFramework/Actor.h"
 #include "GameplayEffectTypes.h"
 #include "AuraProjectile.generated.h"
 
+class UNiagaraSystem;
 class USphereComponent;
 class UProjectileMovementComponent;
 
@@ -17,7 +17,6 @@ class AURA_API AAuraProjectile : public AActor
 	GENERATED_BODY()
 	
 public:	
-	
 	AAuraProjectile();
 
 	UPROPERTY(VisibleAnywhere)
