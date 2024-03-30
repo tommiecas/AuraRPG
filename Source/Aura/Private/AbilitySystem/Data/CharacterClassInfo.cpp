@@ -1,4 +1,4 @@
-// Copyright Crapiello Entertainment
+// Copyright Druid Mechanics
 
 
 #include "AbilitySystem/Data/CharacterClassInfo.h"
