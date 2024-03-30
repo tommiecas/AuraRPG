@@ -23,12 +23,8 @@ public:
 	AAuraCharacterBase();
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	UAttributeSet* GetAttributeSet() const { return AttributeSet; }
-	virtual UAnimMontage* GetHitReactMontage_Implementation() override;
-	virtual void Die() override;
 
-	UFUNCTION(NetMulticast, Reliable) 
-	virtual void MulticastHandleDeath();
-	
+	virtual UAnimMontage* GetHitReactMontage_Implementation() override;
 protected:
 	virtual void BeginPlay() override;
 
